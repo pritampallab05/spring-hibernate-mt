@@ -25,6 +25,8 @@ public class TenantController {
 	@ResponseBody
 	public ResponseEntity<List<Company>> SaveData(@RequestParam(name = "tenant", required = true) String tenant,
 			@RequestParam(name = "name", required = true) String name) {
+		// The tenant is fetched from the rest call
+		// In reality it will be fetched from the JWT token
 		TenantContext.setCurrentTenant(tenant);
 		Company company = new Company();
 		company.setName(name);
