@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: MultiTenant
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/springmt'
+    username: 'postgres'
+    password: 'password'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        ddl-auto: update
+hibernate:
+  hbm2ddl:
+    auto: update
