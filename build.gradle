@@ -19,7 +19,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.26.Final'
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.26.Final'
-    compile group: 'org.liquibase', name: 'liquibase-core', version: '4.2.2'
 }
 
 application {
